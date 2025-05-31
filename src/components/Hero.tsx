@@ -24,12 +24,11 @@ const Hero = () => {
               bananabrain.io
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
-              A simple AI agent platform with Slack and Discord integration
+              A simple AI agent platform with Slack integration
             </p>
             
             <div className="flex flex-wrap gap-2 mb-8 justify-center lg:justify-start">
               <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Slack Integration</span>
-              <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">Discord Integration</span>
               <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Automation</span>
             </div>
             
@@ -42,9 +41,13 @@ const Hero = () => {
               Download Platform
             </Button>
             
-            <p className="text-gray-500 text-sm mt-4">
-              Available for Windows, macOS, and Linux
-            </p>
+            <div className="text-gray-500 text-sm mt-4 space-y-1">
+              <p>Or pull the Docker image:</p>
+              <code className="bg-gray-100 px-2 py-1 rounded text-xs">
+                docker pull ghcr.io/casselryd/bananabrain:main
+              </code>
+              <p>Compatible with any Docker-enabled system</p>
+            </div>
           </div>
           
           {/* Right side - Demo area */}
