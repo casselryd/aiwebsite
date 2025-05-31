@@ -42,7 +42,7 @@ const Hero = () => {
             </Button>
             
             <div className="text-gray-500 text-sm mt-4 space-y-1">
-              <p>Or pull the Docker image:</p>
+              <p>Pull the Docker image:</p>
               <code className="bg-gray-100 px-2 py-1 rounded text-xs">
                 docker pull ghcr.io/casselryd/bananabrain:main
               </code>
