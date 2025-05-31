@@ -1,9 +1,6 @@
-
 import { DOWNLOAD_CONFIG } from "@/config/download";
-
 const Hero = () => {
-  return (
-    <section className="h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 px-4">
+  return <section className="h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
@@ -26,7 +23,7 @@ const Hero = () => {
               <code className="bg-gray-800 text-green-400 px-4 py-3 rounded-md text-sm font-mono block">
                 docker pull ghcr.io/casselryd/bananabrain:main
               </code>
-              <p className="text-gray-500 text-xs mt-3">Compatible with any Docker-enabled system</p>
+              
             </div>
           </div>
           
@@ -41,8 +38,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
