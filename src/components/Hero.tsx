@@ -1,4 +1,7 @@
+
 import { DOWNLOAD_CONFIG } from "@/config/download";
+import { Button } from "@/components/ui/button";
+
 const Hero = () => {
   return <section className="h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 px-4">
       <div className="max-w-6xl mx-auto">
@@ -17,13 +20,22 @@ const Hero = () => {
               <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Automation</span>
             </div>
             
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Get Started with Docker</h3>
-              <p className="text-gray-600 text-sm mb-3">Pull the Docker image:</p>
-              <code className="bg-gray-800 text-green-400 px-4 py-3 rounded-md text-sm font-mono block">
-                docker pull ghcr.io/casselryd/bananabrain:main
-              </code>
+            <div className="space-y-4">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Self-host</h3>
+                <p className="text-gray-600 text-sm mb-3">Pull the Docker image:</p>
+                <code className="bg-gray-800 text-green-400 px-4 py-3 rounded-md text-sm font-mono block">
+                  docker pull ghcr.io/casselryd/bananabrain:main
+                </code>
+              </div>
               
+              <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-3">Join Hosted Beta</h3>
+                <p className="text-gray-600 text-sm mb-3">Get access to our hosted solution</p>
+                <Button variant="outline" disabled className="w-full">
+                  Signup Currently Closed
+                </Button>
+              </div>
             </div>
           </div>
           
@@ -40,4 +52,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
